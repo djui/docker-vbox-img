@@ -1,13 +1,13 @@
-# vbox-img Docker container
+# vbox-img Docker image
 
-A Docker container that allow to use
+A Docker image that allow to use
 [vbox-img](https://www.virtualbox.org/) for converting VMDK images.
 
 No VirtualBox, VMWare, `qemu-img`, or `vmdk-tool` required.
 
-With this container you can convert vmdk, vdi, vhd, and raw images from and to.
+With this image you can convert vmdk, vdi, vhd, and raw images from and to.
 
-The goal of making this container was to enable the use case of converting a
+The goal of making this image was to enable the use case of converting a
 `.ova` file containing a _monolithicSparse_ `.vmdk` file into an `.ova` file
 containing a _streamOptimized_ `.vmdk` file.
 
