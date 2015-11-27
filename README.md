@@ -14,11 +14,11 @@ containing a _streamOptimized_ `.vmdk` file.
 
 ## Usage
 
-Build:
+### Build
 
     $ docker build -t vbox-img .
 
-Convert monolithicSparse VMDK into streamOptimized VMDK:
+### Convert monolithicSparse VMDK into streamOptimized VMDK
 
     $ docker run --rm -i \
         -v $PWD/coreos_production_vmware_image.vmdk:/tmp/coreos_production_vmware_image.vmdk \
@@ -30,7 +30,7 @@ Convert monolithicSparse VMDK into streamOptimized VMDK:
         > coreos_production_vmware_image_stream.vmdk
     Converting image "/tmp/coreos_production_vmware_image.vmdk" with size 9116319744 bytes (8694MB)...
 
-Usage:
+### Default Usage
 
     $ docker run --rm -it -v my_image.vmdk:/tmp/my_image.vmdk vbox-img
     Oracle VM VirtualBox Disk Utility 5.0.10
