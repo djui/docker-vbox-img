@@ -1,7 +1,7 @@
 # vbox-img Docker image
 
-A Docker image that allow to use
-[vbox-img](https://www.virtualbox.org/) for converting VMDK images.
+A Docker image that allows using
+[vbox-img](https://www.virtualbox.org/) to convert virtual disk images.
 
 No VirtualBox, VMWare, `qemu-img`, or `vmdk-tool` required.
 
