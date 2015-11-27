@@ -39,44 +39,44 @@ containing a _streamOptimized_ `.vmdk` file.
 
     Usage: vbox-img
        setuuid      --filename <filename>
-       [--format VDI|VMDK|VHD|...]
-       [--uuid <uuid>]
-       [--parentuuid <uuid>]
-       [--zeroparentuuid]
+                    [--format VDI|VMDK|VHD|...]
+                    [--uuid <uuid>]
+                    [--parentuuid <uuid>]
+                    [--zeroparentuuid]
        
        geometry     --filename <filename>
-       [--format VDI|VMDK|VHD|...]
-       [--clearchs]
-       [--cylinders <number>]
-       [--heads <number>]
-       [--sectors <number>]
+                    [--format VDI|VMDK|VHD|...]
+                    [--clearchs]
+                    [--cylinders <number>]
+                    [--heads <number>]
+                    [--sectors <number>]
        
        convert      --srcfilename <filename>
-       --dstfilename <filename>
-       [--stdin]|[--stdout]
-       [--srcformat VDI|VMDK|VHD|RAW|..]
-       [--dstformat VDI|VMDK|VHD|RAW|..]
-       [--variant Standard,Fixed,Split2G,Stream,ESX]
+                    --dstfilename <filename>
+                    [--stdin]|[--stdout]
+                    [--srcformat VDI|VMDK|VHD|RAW|..]
+                    [--dstformat VDI|VMDK|VHD|RAW|..]
+                    [--variant Standard,Fixed,Split2G,Stream,ESX]
        
        info         --filename <filename>
        
        compact      --filename <filename>
-       [--filesystemaware]
+                    [--filesystemaware]
        
        createcache  --filename <filename>
-       --size <cache size>
+                    --size <cache size>
        
        createbase   --filename <filename>
-       --size <size in bytes>
-       [--format VDI|VMDK|VHD] (default: VDI)
-       [--variant Standard,Fixed,Split2G,Stream,ESX]
-       [--dataalignment <alignment in bytes>]
+                    --size <size in bytes>
+                    [--format VDI|VMDK|VHD] (default: VDI)
+                    [--variant Standard,Fixed,Split2G,Stream,ESX]
+                    [--dataalignment <alignment in bytes>]
        
        repair       --filename <filename>
-       [--dry-run]
-       [--format VDI|VMDK|VHD] (default: autodetect)
+                    [--dry-run]
+                    [--format VDI|VMDK|VHD] (default: autodetect)
        
        clearcomment --filename <filename>
        
        resize       --filename <filename>
-       --size <new size>
+                    --size <new size>
