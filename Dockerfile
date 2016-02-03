@@ -1,6 +1,8 @@
 FROM ubuntu:15.10
 MAINTAINER Uwe Dauernheim <uwe@dauernheim.net>
 
+WORKDIR /root
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
