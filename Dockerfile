@@ -29,8 +29,8 @@ RUN apt-get update && \
             psmisc \
             module-init-tools
 
-
-RUN curl -s -O http://download.virtualbox.org/virtualbox/5.0.10/virtualbox-5.0_5.0.10-104061~Ubuntu~wily_amd64.deb && \
-    dpkg -i virtualbox-5.0_5.0.10-104061~Ubuntu~wily_amd64.deb
-
+ENV VIRTUALBOX=virtualbox-5.0_5.0.10-104061~Ubuntu~wily_amd64.deb
+RUN curl -s -O http://download.virtualbox.org/virtualbox/5.0.14/$VIRTUALBOX && \
+    dpkg -i $VIRTUALBOX && \
+    rm $VIRTUALBOX
 ENTRYPOINT ["vbox-img"]
