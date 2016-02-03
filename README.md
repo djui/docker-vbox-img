@@ -12,11 +12,16 @@ The goal of making this image was to enable the use case of converting a
 containing a _streamOptimized_ `.vmdk` file.
 
 
-## Usage
-
-### Build
+## Build
 
     $ docker build -t vbox-img .
+
+Or fetch:
+
+    $ docker pull djui/vbox-img
+
+
+## Usage
 
 ### Convert monolithicSparse VMDK into streamOptimized VMDK
 
@@ -43,40 +48,40 @@ containing a _streamOptimized_ `.vmdk` file.
                     [--uuid <uuid>]
                     [--parentuuid <uuid>]
                     [--zeroparentuuid]
-       
+
        geometry     --filename <filename>
                     [--format VDI|VMDK|VHD|...]
                     [--clearchs]
                     [--cylinders <number>]
                     [--heads <number>]
                     [--sectors <number>]
-       
+
        convert      --srcfilename <filename>
                     --dstfilename <filename>
                     [--stdin]|[--stdout]
                     [--srcformat VDI|VMDK|VHD|RAW|..]
                     [--dstformat VDI|VMDK|VHD|RAW|..]
                     [--variant Standard,Fixed,Split2G,Stream,ESX]
-       
+
        info         --filename <filename>
-       
+
        compact      --filename <filename>
                     [--filesystemaware]
-       
+
        createcache  --filename <filename>
                     --size <cache size>
-       
+
        createbase   --filename <filename>
                     --size <size in bytes>
                     [--format VDI|VMDK|VHD] (default: VDI)
                     [--variant Standard,Fixed,Split2G,Stream,ESX]
                     [--dataalignment <alignment in bytes>]
-       
+
        repair       --filename <filename>
                     [--dry-run]
                     [--format VDI|VMDK|VHD] (default: autodetect)
-       
+
        clearcomment --filename <filename>
-       
+
        resize       --filename <filename>
                     --size <new size>
